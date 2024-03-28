@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.set('view engine', 'ejs');
 
 
-app.get('/test', (req, res) => {
+app.post('/test', (req, res) => {
     // res.render('index');
     console.log("the request headers", req.headers)
       res.status(200).send('You are logged in, Welcome!');
